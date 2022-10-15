@@ -71,10 +71,12 @@ public class Pizza {
         }
     }
     public String getBill(){
-        if(flag==true) {
-            this.bill = String.valueOf(this.finalBill);
-            return this.bill;
-        }
-        return "";
+
+        this.bill = String.valueOf(this.finalBill);
+        System.out.println("Base Price Of The Pizza: "+this.price);
+        System.out.println("Extra Cheese Added: "+ this.ExtraCheeseAmount);
+        System.out.println("Extra Toppings Added: "+ this.ExtraToppingAmount);
+        System.out.println("Paperbag Added: "+this.bagPrice);
+        return this.bill;
     }
 }
